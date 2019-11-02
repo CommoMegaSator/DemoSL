@@ -19,7 +19,7 @@
             <input type="text" class='sign-text' name="nickname" required placeholder="Enter your nickname" autocomplete="off" required>
             <input type="email" class='sign-text' name="email" required placeholder="Enter your email" autocomplete="off" required>
             <input type="number" class='sign-text' name="age" required placeholder="Enter your age" min="12" max="99" autocomplete="off" required>
-            <input type="password" class='sign-text' id='pwd' name="password" required placeholder="Enter your password" autocomplete="off" required>
+            <input type="password" class='sign-text' name="password" required placeholder="Enter your password" autocomplete="off" requirequired minlength="6" maxlength="23"red>
         </div>
 
         <div class="buttons">

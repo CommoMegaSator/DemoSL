@@ -7,9 +7,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-import java.util.Map;
-
 @RestController
 @RequestMapping("/rest")
 public class MyRestController {
@@ -24,6 +21,7 @@ public class MyRestController {
     }
 
     @GetMapping
+//    @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<?> getByUserName(@RequestParam(required = false, name = "nickname") String nickname){
         UserEntity userEntity = userService.findUserByNickname(nickname);
         return new ResponseEntity<>(userEntity, HttpStatus.OK);
@@ -35,6 +33,12 @@ public class MyRestController {
         if(user == null){
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @DeleteMapping("{userId}")
+    public ResponseEntity<?> deleteUSer(@PathVariable("userId") Long id){
+        userService.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

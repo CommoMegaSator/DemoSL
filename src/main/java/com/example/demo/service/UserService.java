@@ -15,4 +15,6 @@ public interface UserService {
     List<UserEntity> findAllUsers();
 
     UserEntity updateUserById(Long id, UserEntity userToUpdate);
+
+    void deleteById(Long id);
 }

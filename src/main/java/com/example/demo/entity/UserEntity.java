@@ -3,7 +3,6 @@ package com.example.demo.entity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.context.annotation.ComponentScan;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

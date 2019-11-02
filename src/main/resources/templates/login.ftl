@@ -11,13 +11,13 @@
 </head>
 
 <body>
-<div class="logimage"><img src="/images/Versatile.ico" alt=""></div>
+<div class="logimage"><img src="/images/Versatile.ico" alt="dont working now"></div>
 <div id="boxForm">
     <h2 id="title"><span class="Versatile">Versatile</span> is waiting for u)</h2>
-    <form>
+    <form method="post">
         <div class="logpass">
-            <input class='sign-text' type='email' name='email' placeholder='Login' autocomplete="off" required minlength="6" maxlength="23">
-            <input class='sign-text' id='pwd'  type='password' placeholder='Password' required minlength="6" maxlength="23"><!--  oninvalid="this.setCustomValidity('Invalid password')"> -->
+            <input class='sign-text' type='text' name='nickname' placeholder='Login' autocomplete="off" >
+            <input class='sign-text' type='password' name="password" id='pwd'  placeholder='Password' required minlength="6" maxlength="23"><!--  oninvalid="this.setCustomValidity('Invalid password')"> -->
             <label class="container"><span class="remember">Can we remember u?</span>
 <#--                <@spring.messageText "login.remember", "login.remember"/>-->
                 <input type="checkbox" id="rememberMe">
