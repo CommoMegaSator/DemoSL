@@ -2,8 +2,6 @@ package com.example.demo.controller;
 
 import com.example.demo.entity.ArticlesEntity;
 import com.example.demo.service.ArticlesService;
-import jdk.nashorn.internal.objects.annotations.Getter;
-import org.aspectj.lang.annotation.SuppressAjWarnings;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,6 +23,5 @@ public class ArticlesController {
     @GetMapping
     public ResponseEntity<?> showArticles(){
         return ResponseEntity.ok(articlesService.findAllArticles());
-        //return new ResponseEntity<>(articlesService.findAllArticles(), HttpStatus.OK);
     }
 }

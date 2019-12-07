@@ -1,6 +1,6 @@
 HELP.md
 target/
-!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**
 
@@ -27,5 +27,7 @@ target/
 /.nb-gradle/
 build/
 
-### VS Code ###
+### VS Code ###233	131	Hokage-san
 .vscode/
+/mvnw.cmd
+/mvnw

@@ -8,12 +8,12 @@
 <#if (user)??>
     <div>
         <hr>
-        Firstname:${user.getFirstname()}<br><hr>
-        Lastname:${user.getLastname()}<br><hr>
-        Nickname:${user.getNickname()}<br><hr>
-        Email:${user.getEmail()}<br><hr>
-        Age:${user.getAge()}<br><hr>
-        Password:${user.getPassword()}<br><hr>
+        Firstname:${user.getFirstname()}<hr>
+        Lastname:${user.getLastname()}<hr>
+        Nickname:${user.getNickname()}<hr>
+        Email:${user.getEmail()}<hr>
+        Age:${user.getAge()}<hr>
+        Password:${user.getPassword()}<hr>
     </div>
     <div class="logOut" style="align-items: center;max-width: 50px;border: solid black">
         <a href="/logout">Logout</a>

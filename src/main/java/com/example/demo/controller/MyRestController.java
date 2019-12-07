@@ -21,7 +21,6 @@ public class MyRestController {
     }
 
     @GetMapping
-//    @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<?> getByUserName(@RequestParam(required = false, name = "nickname") String nickname){
         UserEntity userEntity = userService.findUserByNickname(nickname);
         return new ResponseEntity<>(userEntity, HttpStatus.OK);
